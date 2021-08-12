@@ -34,6 +34,7 @@
 
                 @include mobile{
                     font-size: 25px;
+                    margin-right: 10px;
                 }
 
                 @include tablet{
@@ -52,9 +53,34 @@
                 margin-right: 40px;
                 padding: 10px;
 
+                @include mobile{
+                    margin-right: 0px;
+                }
+
                 a{
                     text-decoration: none;
                     color: inherit;
+                }
+
+                .taalswitch{
+                    margin-right: 30px;
+                    width: 70px;
+
+                    > *{
+                        &:hover{
+                            font-weight: 900;
+                        }
+                    }
+
+                    @include mobile{
+                        font-size: 15px;
+                        margin-right: 5px;
+                    }
+
+                    @include tablet{
+                        width: 120px;
+                        font-size: 25px;
+                    }
                 }
 
                 .linkedin{
@@ -79,6 +105,7 @@
                         font-size: 60px;
                     }
 
+
                     &:hover{
                         transform: scale(120%);
                         transition: all 0.2s ease;
@@ -91,6 +118,10 @@
 
                     @include tablet {
                         font-size: 60px;
+                    }
+
+                    @include mobile{
+                        margin-right: 10px;
                     }
 
                     &:hover{
@@ -110,6 +141,10 @@
 
                 @include tablet {
                     transform: scale(150%);
+                }
+
+                @include mobile {
+                    transform: scale(90%);
                 }
 
                 span{
