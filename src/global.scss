@@ -1,0 +1,22 @@
+$mainColor: #53c4ba;
+$secColor: #0f0f11;
+
+$widthmob: 768px;
+$widthpc: 1281px;
+
+@mixin mobile {
+    @media (max-width: #{$widthmob}){
+        @content
+    }
+}
+
+@mixin pc {
+    @media (min-width: #{$widthpc}){
+        @content
+    }
+}
+@mixin tablet {
+    @media (min-width: #{$widthmob}) and (max-width: #{$widthpc}){
+        @content
+    }
+}

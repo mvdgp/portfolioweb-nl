@@ -1,0 +1,161 @@
+@import "../../global.scss";
+
+.educerti{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile{
+        flex-direction: row;
+    }
+
+    h1{
+        color: white;
+        margin-bottom: 30px;
+        text-align: center;
+
+        @include mobile{
+            margin-bottom: 5px;
+        }
+    }
+
+    h2{
+        color: $mainColor;
+        font-size: 15px;
+    }
+
+    h3{
+        color: white;
+        font-size: 15px;
+    }
+
+    h4{
+        color: white;
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+    
+    .wrap{
+        display: flex;
+
+        @include mobile{
+            flex-direction: column;
+            transform: scale(90%);
+        }
+
+        @include tablet{
+            transform: scale(110%);
+        }
+
+        .opleiding{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            @include pc{
+                margin-right: 200px;
+            }
+
+            @include mobile{
+                padding-top: 0px;
+            }
+
+            @include tablet{
+                margin-right: 50px;
+            }
+
+            .mem-hlm{
+                margin-bottom: 30px;
+                background-color: rgba($color: $secColor, $alpha: 0.6);
+                padding: 20px 20px;
+                border-radius: 15px;
+
+                @include mobile{
+                    margin-bottom: 5px;
+                }
+
+                &:hover{
+                    background-color: rgba($color: $secColor, $alpha: 1.0);
+                    transition: all 0.2s ease;
+                }
+            }
+            .hotel-lw{
+                margin-bottom: 30px;
+                background-color: rgba($color: $secColor, $alpha: 0.6);
+                padding: 20px 20px;
+                border-radius: 15px;
+
+                @include mobile{
+                    margin-bottom: 5px;
+                }
+
+                &:hover{
+                    background-color: rgba($color: $secColor, $alpha: 1.0);
+                    transition: all 0.2s ease;
+                }
+            }
+            .havo{
+                margin-bottom: 30px;
+                background-color: rgba($color: $secColor, $alpha: 0.6);
+                padding: 20px 20px;
+                border-radius: 15px;
+
+                @include mobile{
+                    margin-bottom: 20px;
+                }
+
+                &:hover{
+                    background-color: rgba($color: $secColor, $alpha: 1.0);
+                    transition: all 0.2s ease;
+                }
+            }
+        }
+        .certificering{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            @include pc{
+                margin-left: 200px;
+            }
+
+            @include tablet{
+                margin-left: 50px;
+            }
+
+            .md100{
+                margin-bottom: 30px;
+                background-color: rgba($color: $secColor, $alpha: 0.6);
+                padding: 20px 20px;
+                border-radius: 15px;
+
+                @include mobile{
+                    margin-bottom: 5px;
+                }
+
+                &:hover{
+                    background-color: rgba($color: $secColor, $alpha: 1.0);
+                    transition: all 0.2s ease;
+                }
+            }
+
+            .md101{
+                margin-bottom: 30px;
+                background-color: rgba($color: $secColor, $alpha: 0.6);
+                padding: 20px 20px;
+                border-radius: 15px;
+
+                @include mobile{
+                    margin-bottom: 5px;
+                }
+
+                &:hover{
+                    background-color: rgba($color: $secColor, $alpha: 1.0);
+                    transition: all 0.2s ease;
+                }
+            }
+        }
+    }
+}
